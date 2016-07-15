@@ -26,7 +26,7 @@ bug_ description    VARCHAR ( 100 ) NOT NULL,
 userID              CHAR ( 4 ) NOT NULL,
 
 CONSTRAINT pkBugs PRIMARY KEY (bugID),
-CONSTRAINT fr_userID FOREIGN KEY (userID) REFERENCES Users (userID),
+CONSTRAINT fk_userID FOREIGN KEY (userID) REFERENCES Users (userID),
 
 ) ENDINE = MYISAM;
 ";
