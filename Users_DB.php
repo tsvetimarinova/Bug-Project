@@ -29,7 +29,7 @@ admin     BIT,
 privID    CHAR ( 4 )  NOT NULL,
 
 CONSTRAINT pkUser PRIMARY KEY (userID),
-CONSTRAINT fr_privID FOREIGN KEY (privID) REFERENCES Privileges (privID),
+CONSTRAINT fk_privID FOREIGN KEY (privID) REFERENCES Privileges (privID),
 
 ) ENDINE = MYISAM;
 ";
