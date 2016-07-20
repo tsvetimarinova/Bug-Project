@@ -23,7 +23,16 @@ mysql_select_db($db_database)or die("Unable to connect to database: " . mysql_er
 ?>
 <html>
     <body>
+
+    <div class="container">
+        <div class="starter-template">
+            <h1>BUGS</h1>
+        </div>
+    </div><!-- /.container -->
             <?php
+
+
+
 
 $query = "SELECT * FROM bugs";
 // execute the SQL query
