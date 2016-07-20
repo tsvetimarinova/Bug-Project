@@ -26,8 +26,8 @@ mysql_select_db($db_database)or die("Unable to connect to database: " . mysql_er
 
     <div class="container">
         <li class="active"><a href = "http://bughelp.azurewebsites.net/Home_page.html"> Home Page </a></li>
-        <!-- <li><a href = "http://webappcw.azurewebsites.net/AdventurePage.php"> Adventure Page </a></li>
-         <li><a href = "http://webappcw.azurewebsites.net/QueryTest.php"> Hyperlink - QT - </a></li> -->
+        <li><a href = "http://webappcw.azurewebsites.net/accidental_semicolon.php"> Accidental semicolon </a></li>
+        <li><a href = "http://webappcw.azurewebsites.net/curly_braces.php"> Curly braces </a></li>
     </div>
 
     <div class="container">
