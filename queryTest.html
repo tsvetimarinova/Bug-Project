@@ -7,7 +7,7 @@
    // "WebApp_Coursework"
 //);
 // test if connection was established, and print any errors
-//if($db->connect_errno){
+//if($db->connect_error){
 //    die("Connection failed: " . $conn->connect_error);
 //}
 $db_database = 'databasebug1300608';
@@ -26,7 +26,7 @@ if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
-echo 'bugID: ' . mysql_result($result, $j, 'bugID') . '</br>';
+echo 'bugID: ' . mysql_result($result, $j, 'bugID') . ;
 
 }
 // iterate over $result object one $row at a time
