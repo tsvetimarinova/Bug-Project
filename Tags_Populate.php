@@ -13,14 +13,14 @@ if ($conn->connect_error){
 }
 /*Populates sql table*/
 $sql = "
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T001', '', 'B001');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T002', '', 'B006');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T003', '', 'B008');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T004', '', 'B009');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T005', '', 'B0014');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T006', '', 'B003');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T007', '', 'B005');
-INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T008', '', 'B0011');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T001', 'semicolon', 'B001');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T002', 'braces', 'B002');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T003', 'break-statement', 'B003');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T004', '', 'B004');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T005', '', 'B005');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T006', '', 'B006');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T007', '', 'B007');
+INSERT INTO Comments (tagID, tag_description, bugID) VALUES ('T008', '', 'B008');
 
 ";
 
