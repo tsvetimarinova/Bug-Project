@@ -25,14 +25,14 @@ mysql_select_db($db_database)or die("Unable to connect to database: " . mysql_er
     <body>
             <?php
 
-$query = "SELECT * FROM tags";
+$query = "SELECT * FROM users";
 // execute the SQL query
 $result = mysql_query($query);
 if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
-    echo 'tagID: ' . mysql_result($result, $j, 'tagID') . '</br>';
+    echo 'userID: ' . mysql_result($result, $j, 'userID') . '</br>';
 
 }
 // iterate over $result object one $row at a time
