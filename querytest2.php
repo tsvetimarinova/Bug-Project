@@ -26,15 +26,21 @@ mysql_select_db($db_database)or die("Unable to connect to database: " . mysql_er
 
     <div class="container">
         <li class="active"><a href = "http://bughelp.azurewebsites.net/Home_page.html"> Home Page </a></li>
-        <li><a href = "http://webappcw.azurewebsites.net/accidental_semicolon.php"> Accidental semicolon </a></li>
-        <li><a href = "http://webappcw.azurewebsites.net/curly_braces.php"> Curly braces </a></li>
+
     </div>
 
     <div class="container">
         <div class="starter-template">
             <h1>BUGS</h1>
         </div>
-    </div><!-- /.container -->
+    </div>
+
+    <div class="container">
+        <div class="starter-template">
+            <li><a href = "http://webappcw.azurewebsites.net/accidental_semicolon.php"> Accidental semicolon </a></li>
+            <li><a href = "http://webappcw.azurewebsites.net/curly_braces.php"> Curly braces </a></li>
+        </div>
+    </div>
             <?php
 
 
@@ -47,7 +53,7 @@ if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
-    echo ' ' . mysql_result($result, $j, 'bug_name') . '</br>';
+   // echo ' ' . mysql_result($result, $j, 'bug_name') . '</br>';
    /* echo 'Description: ' . mysql_result($result, $j, 'bug_description') . '</br>'; */
 }
 // iterate over $result object one $row at a time
