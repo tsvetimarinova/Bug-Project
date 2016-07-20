@@ -33,7 +33,7 @@ $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
     echo ' ' . mysql_result($result, $j, 'bug_name') . '</br>';
-    echo 'Description: ' . mysql_result($result, $j, 'bug_description') . '</br>';
+   /* echo 'Description: ' . mysql_result($result, $j, 'bug_description') . '</br>'; */
 }
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
