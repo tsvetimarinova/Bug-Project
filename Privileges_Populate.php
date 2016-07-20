@@ -13,12 +13,12 @@ if ($conn->connect_error){
 }
 /*Populates sql table*/
 $sql = "
-INSERT INTO Privileges(privID, description) VALUES ('PR01', '');
-INSERT INTO Privileges(privID, description) VALUES ('PR02', '');
-INSERT INTO Privileges(privID, description) VALUES ('PR03', '');
-INSERT INTO Privileges(privID, description) VALUES ('PR04', '');
-INSERT INTO Privileges(privID, description) VALUES ('PR05', '');
-INSERT INTO Privileges(privID, description) VALUES ('PR06', '');
+INSERT INTO Privileges(privID, description) VALUES ('PR01', 'User may view page.');
+INSERT INTO Privileges(privID, description) VALUES ('PR02', 'User may edit or delete any comments or bugs.');
+INSERT INTO Privileges(privID, description) VALUES ('PR03', 'User may edit or delete their own comments or bugs.');
+INSERT INTO Privileges(privID, description) VALUES ('PR04', 'User may add or delete attachments for their own bugs.');
+INSERT INTO Privileges(privID, description) VALUES ('PR05', 'User may delete attachments for any bugs.');
+
 ";
 
 
