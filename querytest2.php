@@ -37,8 +37,8 @@ mysql_select_db($db_database)or die("Unable to connect to database: " . mysql_er
 
     <div class="container">
         <div class="starter-template">
-            <li><a href = "http://webappcw.azurewebsites.net/accidental_semicolon.php"> Accidental semicolon </a></li>
-            <li><a href = "http://webappcw.azurewebsites.net/curly_braces.php"> Curly braces </a></li>
+            <li><a href = "http://http://bughelp.azurewebsites.net/accidental_semicolon.php"> Accidental semicolon </a></li>
+            <li><a href = "http://http://bughelp.azurewebsites.net/curly_braces.php"> Curly braces </a></li>
         </div>
     </div>
             <?php
