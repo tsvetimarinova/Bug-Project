@@ -12,8 +12,6 @@
 //    die("Connection failed: " . $conn->connect_error);
 //}
 
-
-
 $db_database = 'databasebug1300608';
 $db_hostname = 'us-cdbr-azure-west-c.cloudapp.net';
 $db_username = 'b4bbf8767a3b3c';
@@ -34,7 +32,7 @@ if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
-    echo 'bugID: ' . mysql_result($result, $j, 'bugID') . '</br>';
+    echo 'bug_name: ' . mysql_result($result, $j, 'bug_name') . '</br>';
 
 }
 // iterate over $result object one $row at a time
