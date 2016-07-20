@@ -32,9 +32,8 @@ if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
-    echo 'bugID: ' . mysql_result($result, $j, 'bugID') . '</br>';
     echo 'bug_name: ' . mysql_result($result, $j, 'bug_name') . '</br>';
-
+    echo 'bug_description: ' . mysql_result($result, $j, 'bug_description') . '</br>';
 }
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
