@@ -13,9 +13,17 @@ if ($conn->connect_error){
 }
 /*Populates sql table*/
 $sql = "
-INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B001', '', '', 'U001');
-INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B002', '', '', 'U001');
-INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B003', '', '', 'U001');
+INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B001', 'Accidental semicolon ', 'for (i=0; i<numrows; i++)
+  for (j=0; j<numcols; j++);
+    pixels++;
+
+Caused by a stray \";\" on line 2. Accidental bugs are often caused by stray characters, etc. While \"minor\" in their fix, they can be the devil to find!', 'U001');
+INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B002', 'Curly braces', 'Forgetting to put curly braces around the body of a loop or conditional statement, and wonder what's happening!
+
+Ex:
+while ( SomeCondition )
+    Something(); SomeCondition = false;', 'U001');
+INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B003', 'Break-statement', 'Not actually a bug, but mistake: To forget to put break-statement after case-statement inside a switch-statement and not knowing it will fall-throug', 'U001');
 INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B004', '', '', 'U002');
 INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B005', '', '', 'U002');
 INSERT INTO Bugs (bugID, bug_name, bug_description, userID) VALUES ('B006', '', '', 'U002');
