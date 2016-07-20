@@ -32,6 +32,7 @@ if(!$result) die ("Could not query: " . mysql_error());
 $rows = mysql_num_rows($result);
 for($j = 0; $j < $rows; ++$j)
 {
+    echo 'bugID: ' . mysql_result($result, $j, 'bugID') . '</br>';
     echo 'bug_name: ' . mysql_result($result, $j, 'bug_name') . '</br>';
 
 }
